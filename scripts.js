@@ -4,7 +4,10 @@ function generateDivs() {
     let number = document.getElementById('gridSize').value; //get input from text box 
     let divCount = container.childElementCount; // count the number of divs and store count in divCount
 
-    if (divCount === 0 || typeof number != "number") { //default grid to 16 on load
+    const re = /^\s/;
+
+    // Sets default if empty or spaces and on initial page load
+    if (number === "" || re.test(number || divCount === 0)) {
         number = 16;
     }
 
