@@ -10,10 +10,14 @@
 </head>
 <body>
     <div id="flexbox">
-        <div>
-            <p>Some instructional text</p>
-            <input id="gridSize">
-            <button type="button" onclick="generateDivs()">Update Grid</button>
+        <div id="wrapper">
+            <h1>Etch-A-Sketch</h1>
+            <p>Hover over each box to begin drawing! Resize the grid by entering a number less than 100.</p>
+            <div id="innerWrapper">
+                <input id="gridSize">
+                <button type="button" onclick="generateDivs()">Update/Reset</button>
+            </div>
+            
         </div>
         <div id="container"></div>
     </div>
