@@ -1,11 +1,12 @@
 const container = document.querySelector('#container');
 
-
-
 function generateDivs() {
     let number = document.getElementById('gridSize').value; //get input from text box 
     let divCount = container.childElementCount; // count the number of divs and store count in divCount
-
+    
+    if(divCount === 0){ //default grid to 16 on load
+        number = 16;
+    } 
     
     if (number * number > divCount) { // if input number higher than divCount then add differnece
         numberAdd = (number * number) - divCount;
@@ -25,13 +26,5 @@ function generateDivs() {
     document.getElementById('container').style.gridTemplateColumns = gridTemplateColumns;
 
 }
-
-
-
-
-
-
-
-
 
 generateDivs();
