@@ -8,7 +8,7 @@ function generateDivs() {
 
     // Sets default if empty or spaces and on initial page load
     if (number === "" || re.test(number || divCount === 0)) {
-        number = 16;
+        number = 50;
     }
 
     if (number > 100) {
@@ -34,9 +34,10 @@ function generateDivs() {
     const divs = container.querySelectorAll('.divClass');
 
     divs.forEach((divs) => {
-        divs.setAttribute("style", "background-color: white");
+        divs.setAttribute("style", "background-color: grey");
         divs.addEventListener('mouseenter', () => {
-            divs.setAttribute("style", "background-color: black;")
+            divs.setAttribute("style", "background-color: black; border: 1px solid black")
+            //divs.setAttribute("style", "border: 1px solid black;")
         });
     });
 
