@@ -9,7 +9,6 @@
 
 #container {
     display: grid;
-    grid-template-columns: repeat(number, 1fr);
     width: 550px;
     height: 550px;
 }
