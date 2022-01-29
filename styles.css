@@ -1,7 +1,17 @@
+#flexbox {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(number, 1fr);
-    
+    width: 550px;
+    height: 550px;
 }
 
 #container div {
